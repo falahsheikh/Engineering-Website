@@ -20,25 +20,7 @@ body{
     background-position: center;
 } */
 
-/* #header {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-image: url(./images/portrait.png);
-    background-size: cover;
-    background-position: center;
-}
 
-#header::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 25%; 
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
-    pointer-events: none; 
-} */
 
 #header {
     position: relative;
@@ -57,7 +39,6 @@ body{
     left: 0;
     width: 100%;
     height: 25%; 
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
     pointer-events: none; 
 }
 
@@ -234,7 +215,7 @@ nav.navbar {
 
 .tab-links.active-link::after{
     width: 50%;
-}
+} */
 
 .tab-contents ul li{
     list-style: none;
@@ -661,9 +642,7 @@ nav .fa-solid{
     display: none;
 }
 @media only screen and (max-width: 600px){
-    #header{
-        background-image: url(./images/portrait.png);
-    }
+
     .header-text{
         margin-top: 100%;
         font-size: 16px;
@@ -737,7 +716,7 @@ nav .fa-solid{
         display: block;
         margin: 50px auto;
         width: fit-content;
-        background-color: #26d1002c;
+        background-color: #00d1c72c;
         border: 1px solid #01e6ff;
         padding: 14px 130px;
         border-radius: 6px;
@@ -761,13 +740,6 @@ nav .fa-solid{
 
     #header::after {
         content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 110%; /* Adjust the height of the gradient as needed */
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0));
-        pointer-events: none; /* Ensure the overlay doesn't interfere with content */
     }
     #header p {
         position: relative;
@@ -991,5 +963,4 @@ nav .fa-solid{
         background: #2a3e2d62;
         transform: translateY(-5px);
     }
-    
 }
