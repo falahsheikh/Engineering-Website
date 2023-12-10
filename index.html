@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,49 +13,54 @@
 <body>
 <div id="header">
     <div class="container">
-        <nav>
-            <h1>Shaik Hassan</h1> <class="logo">
-            <ul>
+        <nav class="navbar">
+            <a href="#header" style="text-decoration: none;">
+            <h1 class="logo">Shaik Hassan.</h1>
+            </a>
+            <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About Me</a></li>
-                <!-- <li><a href="#">My services</a></li> -->
-                <li><a href="#projects">Ministrations</a></li>
+                <li><a href="#services">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <p></p>
-            <h1>I'm Abdul Hady 
-                <span>Shaik Hassan</span></h1>
+            <h1>I'm Abdul Hady<span><br>Shaik Hassan</span></h1>
         </div>
+        <a href="./images/Abdul_Hady_Shaik_Hassan_s_Resume (3).pdf" target="_blank" class="btn btn2">Resume</a>
     </div>
 </div>
+
 <!-- -------------------about me-------------------- -->
 <div id="about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/d7e67d75-11e1-4486-a509-4a860a78da00.JPG">
+                <img src="./images/d7e67d75-11e1-4486-a509-4a860a78da00.JPG" width="100%">
             </div>
             <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1><br>
-                <p>Welcome to my professional profile. I am Abdul Hady Shaik Hassan, a seasoned professional with extensive experience in project execution and quality assurance. Connecting my passion for the intricacies of power systems with my commitment to quality assurance, I have played a pivotal role in shaping and maintaining critical infrastructures.</p><br>
-                    
-                    <p>I am a dedicated individual with a proven track record in overseeing and executing projects related to power distribution and utility management. My expertise spans various roles, where I have excelled in ensuring the seamless integration of electrical systems in compliance with international standards.</p><br>
-                    
-                    <p>In my current role as Project Executor & QA/QC Inspector at MARAFIQ Power and Utility Company in Yanbu, KSA, I orchestrate Power Connection Requests for diverse projects within the Royal Commission Yanbu. I conduct inspections and tests for equipment and cables, adhering to international standards and leading project execution in accordance with NEC, IEC, IEEE guidelines.</p><br>
-                    
-                    <p>During my tenure as QC & Quality Inspector/ Electrical Foreman from 2002 to 2020, also at MARAFIQ, I evaluated technical aspects of distribution network projects, ensuring quality and adherence to specifications. I pioneered electrical distribution activities, overseeing installation, testing, and commissioning. I also played a key role in training and mentoring personnel in testing commission activities and QA/QC documentation.</p><br>
-                    
-                    <p>From 1991 to 2002, as Substation Maintenance Electrical Foreman Gas Insulated Switch Gear (GIS) at the Royal Commission for Jubail and Yanbu, I undertook preventive and corrective maintenance of GIS, transformers, and circuit breakers. My expertise included high-voltage testing, diagnostic maintenance, and troubleshooting of various equipment.</p><br>
-                    
-                    <p>In my earlier role as Electrical Commissioning Foreman from 1986 to 1991 at RESOURCE SCIENCES ARABIA LTD in Yanbu, I conducted commissioning tests on transformers and carried out preventive and corrective maintenance on various electrical systems.</p><br>
-                    
-                    <p>Driven by a passion for excellence and a commitment to the highest standards, I bring a wealth of experience and expertise to any project. My journey has been marked by achievements, recognition, and a relentless pursuit of knowledge in the dynamic field of electrical engineering. If you seek a professional with a proven track record and a dedication to quality, I am ready to contribute to your endeavors.</p><br>
-                                        
+                <h1 class="sub-title">About Me</h1>
+                <br>
+                <p>Welcome to my profile! I'm Abdul Hady Shaik Hassan, a seasoned professional with a strong background in project execution and quality assurance. Passionate about power systems intricacies, I've played a pivotal role in shaping and maintaining critical infrastructures.</p>
+                <br>
+                <p>With a proven track record, I've overseen and executed power distribution and utility management projects, ensuring seamless integration of electrical systems in compliance with international standards.</p>
+                <br>
+                <p>Currently serving as Project Executor & QA/QC Inspector at MARAFIQ Power and Utility Company in Yanbu, KSA, I orchestrate Power Connection Requests, conduct inspections, and lead project execution in line with NEC, IEC, IEEE guidelines for diverse projects within the Royal Commission Yanbu.</p>
+                <br>
+                <p>During my extensive tenure at MARAFIQ, I excelled as QC & Quality Inspector/Electrical Foreman, evaluating technical aspects of distribution network projects and pioneering electrical distribution activities. I also played a key role in training and mentoring personnel.</p>
+                <br>
+                <p>From 1991 to 2002, as Substation Maintenance Electrical Foreman Gas Insulated Switch Gear (GIS) at the Royal Commission for Jubail and Yanbu, I undertook preventive and corrective maintenance of GIS, transformers, and circuit breakers, specializing in high-voltage testing, diagnostic maintenance, and troubleshooting.</p>
+                <br>
+                <p>In my earlier role as Electrical Commissioning Foreman from 1986 to 1991 at RESOURCE SCIENCES ARABIA LTD in Yanbu, I conducted commissioning tests on transformers and carried out preventive and corrective maintenance on various electrical systems.</p>
+                <br>
+                <p>Driven by a passion for excellence and a commitment to the highest standards, I bring a wealth of experience and expertise to any project. My journey is marked by achievements, recognition, and a relentless pursuit of knowledge in the dynamic field of electrical engineering. If you're seeking a professional with a proven track record and a dedication to quality, I'm ready to contribute to your endeavors.</p>
+                
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
@@ -90,7 +97,6 @@
                                 <br>Adherence to standards (NEC, IEC, IEEE)
                                 <br>
                                 <br>Safety checks and testing expertise
-
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
@@ -147,7 +153,8 @@
         </div>
     </div>
 </div>
-<!-- -------------------Projects-------------------- -->
+
+<!-- -------------------resume-------------------- -->
 <div id="projects">
     <div class="container">
         <h1 class="sub-title">Ministrations</h1>
@@ -199,47 +206,6 @@
         </div>
     </div>
 </div>
-<!-- -------------------resume-------------------- -->
-<!-- <div id="projects">
-    <div class="container">
-        <h1 class="sub-title">Projects</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/work1,2,3.png">
-                <div class="layer">
-                    <h3>Portfolio-Website</h3>
-                    <p>Welcome to my personal website, where I share my journey as a computer science student, 
-                        showcasing projects, experience, and hobbies. Discover the source code for my portfolio website here, 
-                        and join me in exploring the fascinating world of computer science. 
-                        Let's embark on this informative and inspiring adventure together!</p>
-                    <a href="https://github.com/falahsheikh/Portfolio-website">GitHub Repository</a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/work1,2,3.png">
-                <div class="layer">
-                    <h3>RoboticArm</h3>
-                    <p>Implementation of object recognition and distance estimation using 
-                        Python and OpenCV to enable the development of a robotic arm that could utilize reinforcement learning 
-                        and be able to adapt and learn from real-time data. 
-                        Also implemented a custom OpenAI gym environment for the Kinova Gen 3 robotic arm, which allowed for simulated training of the 
-                        robotic arm using a reinforcement learning algorithm (DDPG) and provided a platform for testing and fine-tuning.</p>
-                    <a href="https://github.com/falahsheikh/RoboticArm">GitHub Repository</a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/work1,2,3.png">
-                <div class="layer">
-                    <h3>ACRobotics_SumoBots</h3>
-                    <p>Development of an autonomous sumo bot, featuring independent functionality, 
-                        motor and sensor configurations, and a team collaboration at AC Robotics UCalgary.</p>
-                    <a href="https://github.com/falahsheikh/ACRobotics_SumoBots">GitHub Repository</a>
-                </div>
-            </div>
-        </div>
-        <a href="https://github.com/falahsheikh?tab=repositories" class="btn">See more</a>
-    </div>
-</div> -->
 <!-- -----------------contact------------------- -->
 <div id="contact">
     <div class="container">
@@ -248,13 +214,6 @@
                 <h1 class="sub-title">Contact Me</h1>
                 <p><i class="fa-solid fa-square-envelope"></i> shaikhasan27@gmail.com</p>
                 <p><i class="fas fa-phone-square-alt"></i> +966 50-111-0863</p>
-                <!-- <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/falah-sheikh-3289b018b/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/falahsheikh"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.instagram.com/falah.sheikh/"><i class="fa-brands fa-instagram"></i></a>
-                    
-                </div> -->
-                <a href="images/Abdul_Hady_Shaik_Hassan_s_Resume (3).pdf" download class="btn btn2">Download Resume</a>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
@@ -269,7 +228,7 @@
         </div>
     </div>
     <div class="copyright">
-        <p>Shaik Hassan © copyright</p>
+        <p>Shaik Hassan © 2024</p>
     </div>
 </div>
 
@@ -292,8 +251,24 @@
         document.getElementById(tabname).classList.add("active-tab")
     }
 </script>
+
+
 <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwe1eDBe6taqmdgBamuGyrAzTlYGND24L0YMBHcsu22U9TAaQrLfniKQ5aJtumS6jM-/exec'
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyGRp4gqgWSOOlBxmUy6WFsO8lkJSy91wqvanPI_Uo2MPgMIjLLl81YEhsB29Oq-p38lg/exec'
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById("msg")
   
@@ -310,6 +285,8 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
+
+
   
 </body>
 </html>
